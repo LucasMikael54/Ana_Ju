@@ -1,0 +1,178 @@
+body{
+    background-color: #000000;
+    color:white;
+}
+ 
+h1{
+    color: purple;
+    font-size: 30px;  
+    margin: 0;
+}
+ 
+section{
+    padding: 40px;
+}
+ 
+h2{
+    color:purple;
+    font: 30;
+}
+ 
+#inicio h2{
+    font-size: 45px;
+    color:purple;
+}
+ 
+#inicio p{
+    font-size: 18px;
+    line-height: 1.6;
+}
+ 
+.Hdiferente{
+    text-align: center;
+}
+ 
+button{
+    background-color:purple;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+ 
+button:hover {
+    background-color:purple;
+}
+ 
+img{
+    width: 300px;
+    border-radius: 15px;
+}
+ 
+.card{
+    background-color: purple;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+}
+ 
+.card h3{
+    color: white;
+}
+ 
+.card:hover{
+    transform: translateY(-10px);
+}
+ 
+.container-cards{
+    display:flex;
+    gap:20px;
+}
+ 
+.galeria-imagens{
+    display: flex;
+    gap:20px;
+ 
+    justify-content: center;
+}
+ 
+.foto{
+    width: 300px;
+    height: 350;
+    overflow: hidden;
+    border-radius: 15px;
+}
+ 
+.foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3;
+}
+ 
+.foto:hover img {
+    transform: scale(1.08);
+}
+ 
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+ 
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+ 
+nav a {
+   
+    color: white;
+    text-decoration: none;  
+}
+ 
+nav a:hover {
+    color: purple;
+}
+ 
+#inicio{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+ 
+.inicio-texto{
+    flex: 1;
+}
+ 
+.inicio-imagem img{
+    flex: 1;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15x;
+}
+ 
+@media (max-width: 768px) {
+ 
+    .container-cards {
+        flex-direction: column;
+    }
+ 
+    .galeria-imagens {
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+}
+ 
+#contato {
+    max-width: 700px;
+    margin: 0 auto;
+}
+ 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+ 
+input,
+textarea {
+    padding: 12px;
+    border: 1px solid #555555;
+    border-radius: 8px;
+    background-color: #222222;
+    color: white;
+    font-size: 16px;
+}
+
+/*.insta{
+color: white;
+cursor: pointer;
+
+}
