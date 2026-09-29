@@ -1,152 +1,189 @@
 <!DOCTYPE html>
 <html lang="pt-br">
- 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
- 
+
 <body>
+    <!-- CABEÇALHO DO SITE -->
     <header>
-        <!--  -->
-        <h1>Studio Ana Ju</h1>
- 
-        <nav>
+
+        <!-- LOGO E NOME DO SITE -->
+        <div class="logo">
+            <img src="Imagens/logoBranco.jpg" alt="logo AnaJu">
+            <h1>Studio Ana Ju</h1>
+        </div>
+
+
+
+        <nav> <!-- MENU DE NAVEGAÇÃO -->
             <ul>
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#serviços">Serviços</a></li>
                 <li><a href="#galeria">Galeria</a></li>
                 <li><a href="#contato">Contato</a></li>
- 
+
             </ul>
         </nav>
     </header>
- 
+
+    <!-- CONTEÚDO PRINCIPAL DO SITE -->
     <main>
         <section id="inicio">
- 
+
             <div class="inicio-texto">
- 
+
                 <h2>Realce sua beleza através das tranças</h2>
- 
+
                 <p>
                     Tranças feitas com cuidado, estilo e dedicação para valorizar sua beleza e sua identidade.
                 </p>
- 
+
                 <button>Agende seu horário</button>
             </div>
- 
-            <div class="inicio-imagem">
- 
-                <img src="imagem/imagem01.webp" alt="Mulher usando tranças">
- 
-            </div>
+
+
         </section>
- 
+
+        <!-- SEÇÃO SOBRE NÓS -->
         <section id="sobre">
+
             <h2>Sobre nós</h2>
- 
-            <p>
-                Somos especializados em tranças e penteados afro, oferecendo um atendimento cuidadoso e personalizado.
-            </p>
- 
+
+            <!-- Organiza a foto e o texto da seção -->
+            <div class="sobre-conteudo">
+
+                <!-- Foto da trancista ou de um trabalho -->
+                <div class="sobre-imagem">
+
+                    <img src="Imagens/imgSobre.jpg" alt="Trabalho realizado pelo Studio Ana Ju">
+
+                </div>
+
+                <!-- Textos sobre o Studio -->
+                <div class="sobre-texto">
+
+                    <h3>Conheça o Studio Ana Ju</h3>
+
+                    <p>
+                        Somos especializados em tranças e penteados afro,
+                        oferecendo um atendimento cuidadoso e personalizado.
+                    </p>
+
+                    <p>
+                        Cada trabalho é realizado pensando no estilo,
+                        na beleza e na personalidade de cada cliente.
+                    </p>
+
+                </div>
+
+            </div>
+
         </section>
- 
+
+        <!-- SERVIÇOS OFERECIDOS -->
         <section id="serviços">
- 
+
             <h2 class="Hdiferente">Nossos Serviços</h2>
             <div class="container-cards">
                 <div class="card">
                     <h3>Tranças Afro</h3>
- 
+
                     <p>Tranças afro feita de acordo com seu estilo.</p>
                 </div>
- 
+
                 <div class="card">
                     <h3>Box Braids</h3>
- 
+
                     <p>Box braids com diferentes tamanhos e estilos.</p>
                 </div>
- 
+
                 <div class="card">
                     <h3>Tranças nagô</h3>
- 
+
                     <p>Tranças nagô com acabamento detalhado</p>
                 </div>
- 
+
                 <div class="card">
                     <h3>Twists</h3>
                     <p>
                         penteados Twists para diferentes estilos.
                     </p>
- 
+
                 </div>
             </div>
         </section>
- 
+
+        <!-- GALERIA DE TRABALHOS -->
         <section id="galeria">
- 
+
             <h2 class="Hdiferente">Galeria</h2>
- 
+
             <div class="galeria-imagens">
- 
+
                 <div class="foto">
                     <img src="imagens/imgAfro.jpg" alt="Trança Afro">
                 </div>
- 
+
                 <div class="foto">
                     <img src="imagens/imgBoxBraind.jpg" alt="Box Braind">
                 </div>
- 
+
                 <div class="foto">
                     <img src="imagens/imgNago.jpg" alt="Trança Nagô">
                 </div>
             </div>
         </section>
- 
+
+        <!-- FORMULÁRIO DE CONTATO -->
         <section id="contato">
- 
+
             <h2>Entre em contato</h2>
- 
+
             <p>
                 Entre em contato conosco para consultar horários
                 e agendar seu atendimento.
             </p>
- 
+
             <form>
- 
+
                 <label for="nome">Nome</label>
                 <input type="text" id="nome" placeholder="Digite seu nome">
- 
+
                 <label for="telefone">Telefone</label>
                 <input type="tel" id="telefone" placeholder="Digite seu telefone">
- 
+
                 <label for="servico">Serviço desejado</label>
                 <input type="text" id="servico" placeholder="Qual trança você deseja?">
- 
+
                 <label for="mensagem">Mensagem</label>
                 <textarea id="mensagem" placeholder="Digite sua mensagem"></textarea>
- 
+
                 <button type="submit">Agendar atendimento</button>
- 
+
             </form>
- 
+
         </section>
     </main>
- 
+
+    <!-- RODAPÉ DO SITE -->
     <footer>
-  <nav> <a class="insta" href="https://www.instagram.com/_anajug_trancas?igsi=ZXJvdnZuZm84a2di">instagram</a></nav>  
+        <nav> <a class="insta" href="https://www.instagram.com/_anajug_trancas?igsi=ZXJvdnZuZm84a2di">instagram</a>
+        </nav>
         <p>Studio Ana Ju</p>
- 
+
         <p>&copy; 2026 - Todos os direitos reservados.</p>
 
-    
+
     </footer>
 
-   
+
     <script src="script/script.js"></script>
 </body>
+
 </html>

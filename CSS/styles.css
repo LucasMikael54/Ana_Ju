@@ -1,39 +1,139 @@
-body{
-    background-color: #000000;
-    color:white;
+/* CONFIGURAÇÃO GERAL DA PÁGINA */
+
+body {
+     background-color: #FAF6F2;
+    color: #302530;
 }
- 
-h1{
-    color: purple;
-    font-size: 30px;  
+
+/* CABEÇALHO DO SITE */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+
+/* LOGO E NOME DO SITE */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+/* TÍTULO PRINCIPAL */
+
+h1 {
+    color:#7A287D;
+    font-size: 30px;
     margin: 0;
 }
- 
-section{
+
+
+/* MENU DE NAVEGAÇÃO */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: rgb(23, 22, 22);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #7A287D;
+}
+
+
+/* CONFIGURAÇÃO GERAL DAS SEÇÕES */
+
+section {
     padding: 40px;
 }
- 
-h2{
-    color:purple;
-    font: 30;
+
+h2 {
+    color: #7A287D;
+    font-size: 30px;
 }
- 
-#inicio h2{
+
+
+/* SEÇÃO INICIAL */
+
+#inicio {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    /* Imagem de fundo da seção inicial */
+    background-image: url("../Imagens/img.fundo.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 430px;
+}
+
+#inicio h2 {
     font-size: 45px;
-    color:purple;
+    color: #7A287D;
 }
- 
-#inicio p{
+
+#inicio p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #302530;
+    max-width: 650px;
+}
+
+.inicio-texto {
+    max-width: 650px;
+    margin-left: 20%;
+}
+
+/* SEÇÃO SOBRE NÓS */
+
+.sobre-conteudo {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.sobre-imagem img {
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.sobre-texto {
+    max-width: 600px;
+}
+
+.sobre-texto h3 {
+    color: #7A287D;
+    font-size: 28px;
+}
+
+.sobre-texto p {
     font-size: 18px;
     line-height: 1.6;
 }
- 
-.Hdiferente{
-    text-align: center;
-}
- 
-button{
-    background-color:purple;
+
+/* BOTÕES */
+
+button {
+    background-color: #7A287D;
     color: white;
     padding: 15px 25px;
     border: none;
@@ -41,126 +141,99 @@ button{
     font-size: 16px;
     cursor: pointer;
 }
- 
+
 button:hover {
-    background-color:purple;
+    background-color: #7A287D;
 }
- 
-img{
-    width: 300px;
-    border-radius: 15px;
+
+
+/* TÍTULOS CENTRALIZADOS */
+
+.Hdiferente {
+    text-align: center;
 }
- 
-.card{
-    background-color: purple;
+
+
+/* SEÇÃO DE SERVIÇOS */
+
+.container-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background-color: #7A287D;
     padding: 20px;
     border-radius: 10px;
     flex: 1;
 }
- 
-.card h3{
+
+.card h3 {
     color: white;
 }
- 
-.card:hover{
+
+.card:hover {
     transform: translateY(-10px);
 }
- 
-.container-cards{
-    display:flex;
-    gap:20px;
-}
- 
-.galeria-imagens{
+
+
+/* SEÇÃO DA GALERIA */
+
+.galeria-imagens {
     display: flex;
-    gap:20px;
- 
+    gap: 20px;
     justify-content: center;
 }
- 
-.foto{
+
+
+/* CONFIGURAÇÃO GERAL DAS IMAGENS */
+
+img {
     width: 300px;
-    height: 350;
+    border-radius: 15px;
+}
+
+
+/* FOTOS DA GALERIA */
+
+.foto {
+    width: 300px;
+    height: 350px;
     overflow: hidden;
     border-radius: 15px;
 }
- 
-.foto img{
+
+.foto img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: 0.3;
+    transition: 0.3s;
 }
- 
+
 .foto:hover img {
     transform: scale(1.08);
 }
- 
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 40px;
-}
- 
-nav ul{
-    list-style: none;
-    display: flex;
-    gap: 25px;
-}
- 
-nav a {
-   
-    color: white;
-    text-decoration: none;  
-}
- 
-nav a:hover {
-    color: purple;
-}
- 
-#inicio{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-}
- 
-.inicio-texto{
-    flex: 1;
-}
- 
-.inicio-imagem img{
-    flex: 1;
-    width: 100%;
-    max-width: 400px;
-    border-radius: 15x;
-}
- 
-@media (max-width: 768px) {
- 
-    .container-cards {
-        flex-direction: column;
-    }
- 
-    .galeria-imagens {
-        flex-direction: column;
-        align-items: center;
-    }
- 
-}
- 
+
+
+/* SEÇÃO DE CONTATO */
+
 #contato {
     max-width: 700px;
     margin: 0 auto;
 }
- 
+
+
+/* FORMULÁRIO DE CONTATO */
+
 form {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
- 
+
+
+/* CAMPOS DO FORMULÁRIO */
+
 input,
 textarea {
     padding: 12px;
@@ -171,8 +244,18 @@ textarea {
     font-size: 16px;
 }
 
-/*.insta{
-color: white;
-cursor: pointer;
+
+/* RESPONSIVIDADE PARA TELAS MENORES */
+
+@media (max-width: 768px) {
+
+    .container-cards {
+        flex-direction: column;
+    }
+
+    .galeria-imagens {
+        flex-direction: column;
+        align-items: center;
+    }
 
 }
