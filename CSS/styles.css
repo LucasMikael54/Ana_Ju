@@ -3,21 +3,26 @@
 body {
     background-color: #FAF6F2;
     color: #302530;
+
+    background-color: #FAF6F2;
+    color: #302530;
+    font-family: "Poppins", sans-serif;
 }
 
-/* CABEÇALHO DO SITE */
+
+
+
+/* COR do CABEÇALHO DO SITE */
 
 .cabecalho {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 40px;
+
     background: hsla(298, 52%, 32%, 1);
-
     background: linear-gradient(315deg, hsla(298, 52%, 32%, 1) 40%, hsla(298, 34%, 46%, 1) 100%);
-
     background: -moz-linear-gradient(315deg, hsla(298, 52%, 32%, 1) 40%, hsla(298, 34%, 46%, 1) 100%);
-
     background: -webkit-linear-gradient(315deg, hsla(298, 52%, 32%, 1) 40%, hsla(298, 34%, 46%, 1) 100%);
 
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#7A287D", endColorstr="#9B4D9E", GradientType=1);
@@ -33,16 +38,18 @@ body {
 }
 
 .logo img {
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     border-radius: 50%;
 }
 
+/*Logo e Titulo "Ana Ju" no rodapé*/
+
 
 /* TÍTULO PRINCIPAL */
 
-h1 {
+h1{
     color: #ffffff;
     font-size: 30px;
     margin: 0;
@@ -91,6 +98,7 @@ h2 {
     background-size: cover;
     background-position: center;
     min-height: 430px;
+   
 }
 
 #inicio h2 {
@@ -171,7 +179,13 @@ button:hover {
 }
 
 .card {
-    background-color: #7A287D;
+    background: hsla(298, 52%, 32%, 1);
+    background: linear-gradient(315deg, hsla(298, 52%, 32%, 1) 40%, hsla(298, 34%, 46%, 1) 100%);
+    background: -moz-linear-gradient(315deg, hsla(298, 52%, 32%, 1) 40%, hsla(298, 34%, 46%, 1) 100%);
+    background: -webkit-linear-gradient(315deg, hsla(298, 52%, 32%, 1) 40%, hsla(298, 34%, 46%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#7A287D", endColorstr="#9B4D9E", GradientType=1);
+
     padding: 20px;
     border-radius: 10px;
     flex: 1;
@@ -253,7 +267,7 @@ textarea {
     font-size: 16px;
 }
 
-/*Rodapé*/
+/*/////Rodapé/////*/
 footer {
     width: 100%;
     bottom: 0;
@@ -292,9 +306,12 @@ footer {
     justify-content:space-between ;
 }
 
-.logo{
-    width: 80px;
-    margin-bottom: 0;
+
+
+.rodape-texo{
+    border: 10px black none;
+    text-align: center;
+
 }
 
 
