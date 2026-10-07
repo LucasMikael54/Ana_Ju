@@ -9,9 +9,6 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-
-
-
 /* COR do CABEÇALHO DO SITE */
 
 .cabecalho {
@@ -49,12 +46,11 @@ body {
 
 /* TÍTULO PRINCIPAL */
 
-h1{
+h1 {
     color: #ffffff;
     font-size: 30px;
     margin: 0;
 }
-
 
 /* MENU DE NAVEGAÇÃO */
 
@@ -73,7 +69,6 @@ nav a:hover {
     color: #030303;
 }
 
-
 /* CONFIGURAÇÃO GERAL DAS SEÇÕES */
 
 section {
@@ -84,7 +79,6 @@ h2 {
     color: #7A287D;
     font-size: 30px;
 }
-
 
 /* SEÇÃO INICIAL */
 
@@ -97,8 +91,10 @@ h2 {
     background-image: url("../Imagens/img.fundo.png");
     background-size: cover;
     background-position: center;
-    min-height: 430px;
-   
+
+    /* Ocupa o restante da tela abaixo do cabeçalho */
+    min-height: calc(100vh - 140px);
+
 }
 
 #inicio h2 {
@@ -272,11 +268,11 @@ footer {
     width: 100%;
     bottom: 0;
     color: #fff;
-    padding: 100px 0 30px;
+    padding: 45px 0 20px;
     border-top-left-radius: 125px;
     font-size: 13px;
-    line-height: 20px;  
-    
+    line-height: 20px;
+
     background: linear-gradient(315deg, hsla(298, 52%, 32%, 1) 40%, hsla(298, 34%, 46%, 1) 100%);
 
     background: -moz-linear-gradient(315deg, hsla(298, 52%, 32%, 1) 40%, hsla(298, 34%, 46%, 1) 100%);
@@ -285,7 +281,7 @@ footer {
 
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#7A287D", endColorstr="#9B4D9E", GradientType=1);
 
-    
+
 }
 
 .caixa-rodape {
@@ -300,20 +296,69 @@ footer {
 .rodape {
     flex-basis: 25%;
     padding: 10px;
-    display:flex ;
+    display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content:space-between ;
+    justify-content: space-between;
 }
 
 
 
-.rodape-texo{
-    border: 10px black none;
+/* DIREITOS AUTORAIS DO RODAPÉ */
+
+.rodape-texo {
     text-align: center;
 
+    /* Afasta o copyright do conteúdo de cima */
+    margin-top: 25px;
+
+    /* Espaço entre a linha e o texto */
+    padding-top: 20px;
+
+    /* Linha que separa o copyright */
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
+
+/* LINKS DO RODAPÉ */
+
+.rodape-links {
+    align-items: center;
+}
+
+.rodape-links h3 {
+    color: white;
+    font-size: 18px;
+}
+
+.rodape-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* CONTATO DO RODAPÉ */
+
+.rodape-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.rodape-contato h3 {
+    color: white;
+    font-size: 18px;
+}
+
+.rodape-contato a {
+    color: white;
+    text-decoration: none;
+}
 
 /* RESPONSIVIDADE PARA TELAS MENORES */
 
