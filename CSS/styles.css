@@ -119,15 +119,22 @@ h2 {
 .sobre-conteudo {
     display: flex;
     align-items: center;
+    padding: 60px;
     gap: 50px;
+    background: linear-gradient(184deg,rgba(122, 40, 125, 1) 0%, rgba(250, 246, 242, 1) 100%);
+    width: 100%;
+    
 }
 
 .sobre-imagem img {
     width: 350px;
     height: 450px;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 100px;  
+    
 }
+
+
 
 .sobre-texto {
     max-width: 600px;
@@ -202,6 +209,9 @@ button:hover {
     display: flex;
     gap: 20px;
     justify-content: center;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
 }
 
 
@@ -218,8 +228,11 @@ img {
 .foto {
     width: 300px;
     height: 350px;
-    overflow: hidden;
     border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transition: transform 0.8s ease;
 }
 
 .foto img {
@@ -233,6 +246,10 @@ img {
     transform: scale(1.08);
 }
 
+
+.foto.ativo{
+    left: 0;
+}
 
 /* SEÇÃO DE CONTATO */
 
