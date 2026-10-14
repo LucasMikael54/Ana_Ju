@@ -1,20 +1,25 @@
 
-let foto = document.querySelectorAll(".foto");
-
+let fotos = document.querySelectorAll(".foto");
 let atual = 0;
 
+function proximaFoto() {
+    let anterior = atual;
 
-function proximaFoto(){
-    foto[atual].classList.remove("ativo");
+    atual++;
 
-    atual = atual + 1;
-
-    if(atual >= foto.length){
+    if (atual >= fotos.length) {
         atual = 0;
     }
 
-    foto[atual].classList.add("ativo");
+    fotos[atual].style.transition = "none";
+    fotos[atual].style.left = "100%";
+    fotos[atual].offsetHeight;
 
+    fotos[atual].style.transition = "left 2s ease";
+    fotos[atual].style.left = "0";
+
+    fotos[anterior].style.transition = "left 2s linear";
+    fotos[anterior].style.left = "-100%";
 }
 
-    setInterval(proximaFoto,3000);
+setInterval(proximaFoto, 5000);
