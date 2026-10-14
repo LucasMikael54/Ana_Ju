@@ -16,6 +16,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 20px 40px;
+    
 
     background: hsla(298, 52%, 32%, 1);
     background: linear-gradient(315deg, hsla(298, 52%, 32%, 1) 40%, hsla(298, 34%, 46%, 1) 100%);
@@ -57,13 +58,16 @@ h1 {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 25px;  
-  
+    gap: 25px;    
+   
 }
+
+
 
 nav a {
     color: rgb(255, 255, 255);
     text-decoration: none;
+   
      
 }
 
@@ -163,13 +167,14 @@ button {
     color: white;
     padding: 15px 25px;
     border: none;
-    border-radius: 8px;
+    border-radius: 15px;
     font-size: 16px;
     cursor: pointer;
 }
 
 button:hover {
     background-color: #7A287D;
+    
 }
 
 
@@ -271,6 +276,8 @@ img {
 #contato {
     max-width: 700px;
     margin: 0 auto;
+    
+     
 }
 
 
@@ -280,6 +287,9 @@ form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    font-family: sans-serif;
+    font-size: 16px;
+    
 }
 
 
@@ -291,12 +301,14 @@ textarea {
     border: 1px solid #ffffff;
     border-radius: 10px;
     background-color: #fff;
-    color: #7A287D;
     font-size: 16px;
+    font-family: sans-serif
 }
 
 form{
     color: #7A287D;
+    
+    
 }
 
 
@@ -329,6 +341,7 @@ footer {
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
+    
 }
 
 .rodape {
@@ -362,6 +375,7 @@ footer {
 
 .rodape-links {
     align-items: center;
+    
 }
 
 .rodape-links h3 {
@@ -378,6 +392,7 @@ footer {
     display: flex;
     gap: 20px;
 }
+
 
 
 /* CONTATO DO RODAPÉ */
