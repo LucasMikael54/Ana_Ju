@@ -16,7 +16,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 20px 40px;
-    
+
 
     background: hsla(298, 52%, 32%, 1);
     background: linear-gradient(315deg, hsla(298, 52%, 32%, 1) 40%, hsla(298, 34%, 46%, 1) 100%);
@@ -55,20 +55,27 @@ h1 {
 
 /* MENU DE NAVEGAÇÃO */
 
+nav {
+    width: 100%;
+}
+
 nav ul {
     list-style: none;
     display: flex;
-    gap: 25px;    
-   
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+    
 }
 
+.contat
 
 
 nav a {
-    color: rgb(255, 255, 255);
+    color: white;
     text-decoration: none;
-   
-     
 }
 
 nav a:hover {
@@ -127,21 +134,21 @@ h2 {
     align-items: center;
     padding: 60px;
     gap: 50px;
-    
+
     width: 100%;
-    
+
 }
 
-.sobree{
-   background: linear-gradient(184deg,rgba(122, 40, 125, 1) 0%, rgba(250, 246, 242, 1) 100%);
+.sobree {
+    background: linear-gradient(184deg, rgba(122, 40, 125, 1) 0%, rgba(250, 246, 242, 1) 100%);
 }
 
 .sobre-imagem img {
     width: 350px;
     height: 450px;
     object-fit: cover;
-    border-radius: 100px;  
-    
+    border-radius: 100px;
+
 }
 
 
@@ -174,7 +181,7 @@ button {
 
 button:hover {
     background-color: #7A287D;
-    
+
 }
 
 
@@ -217,13 +224,9 @@ button:hover {
 /* SEÇÃO DA GALERIA */
 
 .galeria-imagens {
-    display: flex;
-    gap: 5px;
-    justify-content: center;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
+    overflow: hidden
     
+
 }
 
 
@@ -238,37 +241,35 @@ img {
 /* FOTOS DA GALERIA */
 
 .foto {
-    width: 300px;
-    height: 350px;
-    border-radius: 15px;
-    position:relative;
-    top: 0;
-    left: 100%;
-    flex-shrink: 0;
-   
+width: 300px;
+height: 350px;
+flex-shrink: 0;
+
 }
 
-.fila-fotos{
-     display: flex;
-    gap: 20px;
-    position: relative;
-    left: 0;
-    transition: left 0.8s ease;
+.fila-fotos {
+display: flex;
+gap: 5px;
+width: max-content;
+animation: passar 20s linear infinite;
+
 }
 
 .foto img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: 0.3s;
+width: 100%;
+height: 100%;
+object-fit: cover;
 
 }
 
 .foto:hover img {
-    transform: scale(1.08);
+   transform: scale(1.08);
 }
 
-
+@keyframes passar {
+to {
+transform: translateX(-50%);}
+}
 
 
 /* SEÇÃO DE CONTATO */
@@ -276,8 +277,8 @@ img {
 #contato {
     max-width: 700px;
     margin: 0 auto;
-    
-     
+
+
 }
 
 
@@ -289,7 +290,7 @@ form {
     gap: 10px;
     font-family: sans-serif;
     font-size: 16px;
-    
+
 }
 
 
@@ -305,10 +306,10 @@ textarea {
     font-family: sans-serif
 }
 
-form{
+form {
     color: #7A287D;
-    
-    
+
+
 }
 
 
@@ -341,7 +342,7 @@ footer {
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
-    
+
 }
 
 .rodape {
@@ -375,7 +376,7 @@ footer {
 
 .rodape-links {
     align-items: center;
-    
+
 }
 
 .rodape-links h3 {
@@ -398,7 +399,7 @@ footer {
 /* CONTATO DO RODAPÉ */
 
 .rodape-contato {
-    
+
     flex-direction: column;
     gap: 8px;
 }
