@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+}
+
+
 /* CONFIGURAÇÃO GERAL DA PÁGINA */
 
 body {
@@ -7,6 +12,7 @@ body {
     background-color: #FAF6F2;
     color: #302530;
     font-family: "Poppins", sans-serif;
+    width: 100%;
 }
 
 /* COR do CABEÇALHO DO SITE */
@@ -159,6 +165,7 @@ h2 {
 
 .sobre-texto {
     max-width: 600px;
+    text-align: justify;
 }
 
 .sobre-texto h3 {
@@ -421,7 +428,9 @@ footer {
      
 }
 
-
+.titulo-cont{
+    text-align: right;
+}
 
 
 /* RESPONSIVIDADE PARA TELAS MENORES */
