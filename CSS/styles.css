@@ -447,3 +447,258 @@ footer {
     }
 
 }
+
+
+/* =========================================
+   AJUSTES DO CABEÇALHO - STUDIO ANA JU
+   ========================================= */
+
+/* Organiza logo, menu e botão */
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+}
+
+/* Mantém o tamanho da logo */
+
+.cabecalho .logo img {
+    width: 170px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Posiciona o menu próximo da logo */
+
+.cabecalho nav {
+    margin-left: 30px;
+    flex: 1;
+}
+
+/* Links organizados horizontalmente */
+
+.cabecalho nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Aparência dos links */
+
+.cabecalho nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Efeito ao passar o mouse */
+
+.cabecalho nav a:hover {
+    color: #F3D4F4;
+}
+
+
+/* =========================================
+   BOTÃO AGENDAR HORÁRIO
+   ========================================= */
+
+.botao-cabecalho {
+    display: inline-block;
+
+    margin-left: auto;
+    padding: 12px 22px;
+
+    background-color: white;
+    color: #7A287D;
+
+    border-radius: 25px;
+
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+
+.botao-cabecalho:hover {
+    background-color: #F3D4F4;
+    transform: translateY(-2px);
+}
+
+/* Ajustes em telas menores */
+
+@media (max-width: 768px) {
+
+    .cabecalho {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cabecalho nav {
+        margin-left: 0;
+        flex: 1 1 100%;
+    }
+
+    .cabecalho nav ul {
+        justify-content: center;
+    }
+
+    .botao-cabecalho {
+        margin-left: 0;
+    }
+}
+
+
+/* =========================================
+   AJUSTES DO RODAPÉ - STUDIO ANA JU
+   ========================================= */
+
+/* Organização principal do rodapé */
+
+.caixa-rodape {
+    width: 85%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    gap: 40px;
+}
+
+/* ÁREA DA LOGO */
+
+footer .rodape {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding: 10px;
+}
+
+/* Tamanho da logo */
+
+footer .rodape .logo img {
+    display: block;
+
+    width: 190px;
+    height: auto;
+
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* =========================================
+   LINKS RÁPIDOS
+   ========================================= */
+
+.rodape-links {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+/* Título dos links */
+
+.rodape-links h3,
+.rodape-contato h3 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Links um abaixo do outro */
+
+.rodape-links .links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 12px;
+}
+
+.rodape-links a,
+.rodape-contato a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Efeito ao passar o mouse */
+
+.rodape-links a:hover,
+.rodape-contato a:hover {
+    text-decoration: underline;
+}
+
+/* =========================================
+   CONTATO E REDES SOCIAIS
+   ========================================= */
+
+.rodape-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 12px;
+}
+
+/* Evita espaçamento extra do <br> no HTML */
+
+.rodape-contato br {
+    display: none;
+}
+
+/* =========================================
+   DIREITOS AUTORAIS
+   ========================================= */
+
+.rodape-texo {
+    text-align: center;
+
+    margin-top: 35px;
+    padding: 20px 15px 0;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+
+    color: white;
+    font-size: 13px;
+}
+
+/* =========================================
+   RODAPÉ EM TELAS MENORES
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .caixa-rodape {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        gap: 30px;
+    }
+
+    .rodape-links .links,
+    .rodape-contato {
+        align-items: center;
+    }
+
+    footer .rodape .logo img {
+        width: 170px;
+    }
+}
