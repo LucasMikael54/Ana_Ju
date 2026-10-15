@@ -60,22 +60,25 @@ nav {
 }
 
 nav ul {
-    list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
-    padding: 0;
+    gap: 35px;
+    list-style: none;
     margin: 0;
+    padding: 0;
     
 }
 
-.contat
+
 
 
 nav a {
     color: white;
     text-decoration: none;
+    
+    
+    
 }
 
 nav a:hover {
@@ -113,6 +116,7 @@ h2 {
 #inicio h2 {
     font-size: 45px;
     color: #7A287D;
+   
 }
 
 #inicio p {
@@ -277,8 +281,6 @@ transform: translateX(-50%);}
 #contato {
     max-width: 700px;
     margin: 0 auto;
-
-
 }
 
 
@@ -311,7 +313,6 @@ form {
 
 
 }
-
 
 
 /*/////Rodapé/////*/
@@ -375,7 +376,7 @@ footer {
 /* LINKS DO RODAPÉ */
 
 .rodape-links {
-    align-items: center;
+    justify-content: right;
 
 }
 
@@ -402,17 +403,26 @@ footer {
 
     flex-direction: column;
     gap: 8px;
+    text-align: right;
+    ;
+    
 }
 
 .rodape-contato h3 {
     color: white;
-    font-size: 18px;
+    font-size: 15px;
+    text-align: right;
+   
 }
 
 .rodape-contato a {
     color: white;
     text-decoration: none;
+     
 }
+
+
+
 
 /* RESPONSIVIDADE PARA TELAS MENORES */
 
