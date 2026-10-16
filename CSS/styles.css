@@ -1,39 +1,66 @@
-*{
+/* CONFIGURAÇÕES GERAIS */
+* {
     box-sizing: border-box;
 }
 
-
-/* CONFIGURAÇÃO GERAL DA PÁGINA */
+html {
+    scroll-behavior: smooth;
+}
 
 body {
-    background-color: #FAF6F2;
-    color: #302530;
-
+    margin: 0;
     background-color: #FAF6F2;
     color: #302530;
     font-family: "Poppins", sans-serif;
-    width: 100%;
 }
 
-/* COR do CABEÇALHO DO SITE */
+section {
+    padding: 40px;
+}
 
+h1 {
+    color: #ffffff;
+    font-size: 30px;
+    margin: 0;
+}
+
+h2 {
+    color: #7A287D;
+    font-size: 30px;
+}
+
+img {
+    width: 300px;
+    border-radius: 15px;
+}
+
+button {
+    background-color: #7A287D;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7A287D;
+}
+
+.Hdiferente {
+    text-align: center;
+}
+
+/* 2. CABEÇALHO E NAVEGAÇÃO */
 .cabecalho {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 25px;
     padding: 20px 40px;
-
-
-    background: hsla(298, 52%, 32%, 1);
-    background: linear-gradient(315deg, hsla(298, 52%, 32%, 1) 40%, hsla(298, 34%, 46%, 1) 100%);
-    background: -moz-linear-gradient(315deg, hsla(298, 52%, 32%, 1) 40%, hsla(298, 34%, 46%, 1) 100%);
-    background: -webkit-linear-gradient(315deg, hsla(298, 52%, 32%, 1) 40%, hsla(298, 34%, 46%, 1) 100%);
-
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#7A287D", endColorstr="#9B4D9E", GradientType=1);
+    background: linear-gradient(315deg, #7A287D 40%, #9B4D9E 100%);
 }
-
-
-/* LOGO E NOME DO SITE */
 
 .logo {
     display: flex;
@@ -48,81 +75,72 @@ body {
     border-radius: 50%;
 }
 
-/*Logo e Titulo "Ana Ju" no rodapé*/
-
-
-/* TÍTULO PRINCIPAL */
-
-h1 {
-    color: #ffffff;
-    font-size: 30px;
-    margin: 0;
+.cabecalho .logo img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
-/* MENU DE NAVEGAÇÃO */
-
-nav {
-    width: 100%;
+.cabecalho nav {
+    margin-left: 30px;
+    flex: 1;
 }
 
-nav ul {
+.cabecalho nav ul {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 35px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 25px;
     list-style: none;
-    margin: 0;
     padding: 0;
-    
+    margin: 0;
 }
 
-
-
-
-nav a {
+.cabecalho nav a {
     color: white;
     text-decoration: none;
-    
-    
-    
+    font-weight: 500;
 }
 
-nav a:hover {
-    color: #030303;
+.cabecalho nav a:hover {
+    color: #F3D4F4;
 }
 
-/* CONFIGURAÇÃO GERAL DAS SEÇÕES */
-
-section {
-    padding: 40px;
-}
-
-h2 {
+.botao-cabecalho {
+    display: inline-block;
+    margin-left: auto;
+    padding: 12px 22px;
+    background-color: white;
     color: #7A287D;
-    font-size: 30px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: 0.3s;
 }
 
-/* SEÇÃO INICIAL */
+.botao-cabecalho:hover {
+    background-color: #F3D4F4;
+    transform: translateY(-2px);
+}
 
+/* 3. SEÇÃO INICIAL */
 #inicio {
     display: flex;
     align-items: center;
     gap: 40px;
-
-    /* Imagem de fundo da seção inicial */
     background-image: url("../Imagens/img.fundo.png");
     background-size: cover;
     background-position: center;
-
-    /* Ocupa o restante da tela abaixo do cabeçalho */
     min-height: calc(100vh - 140px);
-
 }
 
 #inicio h2 {
     font-size: 45px;
     color: #7A287D;
-   
 }
 
 #inicio p {
@@ -137,20 +155,17 @@ h2 {
     margin-left: 20%;
 }
 
-/* SEÇÃO SOBRE NÓS */
-
+/* 4. SOBRE */
 .sobre-conteudo {
     display: flex;
     align-items: center;
     padding: 60px;
     gap: 50px;
-
     width: 100%;
-
 }
 
 .sobree {
-    background: linear-gradient(184deg, rgba(122, 40, 125, 1) 0%, rgba(250, 246, 242, 1) 100%);
+    background: linear-gradient(184deg, #7A287D 0%, #FAF6F2 100%);
 }
 
 .sobre-imagem img {
@@ -158,10 +173,7 @@ h2 {
     height: 450px;
     object-fit: cover;
     border-radius: 100px;
-
 }
-
-
 
 .sobre-texto {
     max-width: 600px;
@@ -178,46 +190,14 @@ h2 {
     line-height: 1.6;
 }
 
-/* BOTÕES */
-
-button {
-    background-color: #7A287D;
-    color: white;
-    padding: 15px 25px;
-    border: none;
-    border-radius: 15px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #7A287D;
-
-}
-
-
-/* TÍTULOS CENTRALIZADOS */
-
-.Hdiferente {
-    text-align: center;
-}
-
-
-/* SEÇÃO DE SERVIÇOS */
-
+/* 5. SERVIÇOS */
 .container-cards {
     display: flex;
     gap: 20px;
 }
 
 .card {
-    background: hsla(298, 52%, 32%, 1);
-    background: linear-gradient(315deg, hsla(298, 52%, 32%, 1) 40%, hsla(298, 34%, 46%, 1) 100%);
-    background: -moz-linear-gradient(315deg, hsla(298, 52%, 32%, 1) 40%, hsla(298, 34%, 46%, 1) 100%);
-    background: -webkit-linear-gradient(315deg, hsla(298, 52%, 32%, 1) 40%, hsla(298, 34%, 46%, 1) 100%);
-
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#7A287D", endColorstr="#9B4D9E", GradientType=1);
-
+    background: linear-gradient(315deg, #7A287D 40%, #9B4D9E 100%);
     padding: 20px;
     border-radius: 10px;
     flex: 1;
@@ -231,388 +211,172 @@ button:hover {
     transform: translateY(-10px);
 }
 
-
-/* SEÇÃO DA GALERIA */
-
+/* 6. GALERIA E CARROSSEL */
 .galeria-imagens {
-    overflow: hidden
-    
-
+    overflow: hidden;
 }
-
-
-/* CONFIGURAÇÃO GERAL DAS IMAGENS */
-
-img {
-    width: 300px;
-    border-radius: 15px;
-}
-
-
-/* FOTOS DA GALERIA */
 
 .foto {
-width: 300px;
-height: 350px;
-flex-shrink: 0;
-
+    width: 300px;
+    height: 350px;
+    flex-shrink: 0;
 }
 
 .fila-fotos {
-display: flex;
-gap: 5px;
-width: max-content;
-animation: passar 20s linear infinite;
-
+    display: flex;
+    gap: 5px;
+    width: max-content;
+    animation: passar 20s linear infinite;
 }
 
 .foto img {
-width: 100%;
-height: 100%;
-object-fit: cover;
-
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .foto:hover img {
-   transform: scale(1.08);
+    transform: scale(1.08);
 }
 
 @keyframes passar {
-to {
-transform: translateX(-50%);}
+    to {
+        transform: translateX(-50%);
+    }
 }
 
-
-/* SEÇÃO DE CONTATO */
-
+/* 7. FORMULÁRIO DE AGENDAMENTO */
 #contato {
     max-width: 700px;
     margin: 0 auto;
+    padding: 60px 25px;
 }
 
+#contato h2 {
+    color: #7A287D;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
 
-/* FORMULÁRIO DE CONTATO */
+#contato > p {
+    color: #302530;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
 
-form {
+#form-agendamento {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    font-family: sans-serif;
-    font-size: 16px;
-
-}
-
-
-/* CAMPOS DO FORMULÁRIO */
-
-input,
-textarea {
-    padding: 12px;
-    border: 1px solid #ffffff;
-    border-radius: 10px;
-    background-color: #fff;
-    font-size: 16px;
-    font-family: sans-serif
-}
-
-form {
+    gap: 12px;
     color: #7A287D;
-
-
 }
 
+#form-agendamento label {
+    color: #7A287D;
+    font-size: 15px;
+    font-weight: 600;
+}
 
-/*/////Rodapé/////*/
+#form-agendamento input,
+#form-agendamento select,
+#form-agendamento textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #E3D5E3;
+    border-radius: 10px;
+    background-color: white;
+    color: #302530;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#form-agendamento input:focus,
+#form-agendamento select:focus,
+#form-agendamento textarea:focus {
+    border-color: #7A287D;
+    box-shadow: 0 0 0 3px rgba(122, 40, 125, 0.12);
+}
+
+#form-agendamento textarea {
+    resize: none;
+}
+
+#form-agendamento button {
+    margin-top: 15px;
+    padding: 16px;
+    background-color: #7A287D;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#form-agendamento button:hover {
+    background-color: #9B4D9E;
+}
+
+#mensagem-confirmacao {
+    color: #7A287D;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#mensagem-confirmacao[hidden] {
+    display: none;
+}
+
+/* 8. RODAPÉ */
 footer {
     width: 100%;
-    bottom: 0;
     color: #fff;
     padding: 45px 0 20px;
     border-top-left-radius: 125px;
     font-size: 13px;
     line-height: 20px;
-
-    background: linear-gradient(315deg, hsla(298, 52%, 32%, 1) 40%, hsla(298, 34%, 46%, 1) 100%);
-
-    background: -moz-linear-gradient(315deg, hsla(298, 52%, 32%, 1) 40%, hsla(298, 34%, 46%, 1) 100%);
-
-    background: -webkit-linear-gradient(315deg, hsla(298, 52%, 32%, 1) 40%, hsla(298, 34%, 46%, 1) 100%);
-
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#7A287D", endColorstr="#9B4D9E", GradientType=1);
-
-
+    background: linear-gradient(315deg, #7A287D 40%, #9B4D9E 100%);
 }
-
-.caixa-rodape {
-    width: 85%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-
-}
-
-.rodape {
-    flex-basis: 25%;
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-
-
-/* DIREITOS AUTORAIS DO RODAPÉ */
-
-.rodape-texo {
-    text-align: center;
-
-    /* Afasta o copyright do conteúdo de cima */
-    margin-top: 25px;
-
-    /* Espaço entre a linha e o texto */
-    padding-top: 20px;
-
-    /* Linha que separa o copyright */
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-
-/* LINKS DO RODAPÉ */
-
-.rodape-links {
-    justify-content: right;
-
-}
-
-.rodape-links h3 {
-    color: white;
-    font-size: 18px;
-}
-
-.rodape-links a {
-    color: white;
-    text-decoration: none;
-}
-
-.links {
-    display: flex;
-    gap: 20px;
-}
-
-
-
-/* CONTATO DO RODAPÉ */
-
-.rodape-contato {
-
-    flex-direction: column;
-    gap: 8px;
-    text-align: right;
-    ;
-    
-}
-
-.rodape-contato h3 {
-    color: white;
-    font-size: 15px;
-    text-align: right;
-   
-}
-
-.rodape-contato a {
-    color: white;
-    text-decoration: none;
-     
-}
-
-.titulo-cont{
-    text-align: right;
-}
-
-
-/* RESPONSIVIDADE PARA TELAS MENORES */
-
-@media (max-width: 768px) {
-
-    .container-cards {
-        flex-direction: column;
-    }
-
-    .galeria-imagens {
-        flex-direction: column;
-        align-items: center;
-    }
-
-}
-
-
-/* =========================================
-   AJUSTES DO CABEÇALHO - STUDIO ANA JU
-   ========================================= */
-
-/* Organiza logo, menu e botão */
-
-.cabecalho {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 25px;
-}
-
-/* Mantém o tamanho da logo */
-
-.cabecalho .logo img {
-    width: 170px;
-    height: auto;
-    object-fit: contain;
-}
-
-/* Posiciona o menu próximo da logo */
-
-.cabecalho nav {
-    margin-left: 30px;
-    flex: 1;
-}
-
-/* Links organizados horizontalmente */
-
-.cabecalho nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    gap: 25px;
-
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* Aparência dos links */
-
-.cabecalho nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-/* Efeito ao passar o mouse */
-
-.cabecalho nav a:hover {
-    color: #F3D4F4;
-}
-
-
-/* =========================================
-   BOTÃO AGENDAR HORÁRIO
-   ========================================= */
-
-.botao-cabecalho {
-    display: inline-block;
-
-    margin-left: auto;
-    padding: 12px 22px;
-
-    background-color: white;
-    color: #7A287D;
-
-    border-radius: 25px;
-
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-
-    white-space: nowrap;
-
-    transition: 0.3s;
-}
-
-/* Efeito ao passar o mouse */
-
-.botao-cabecalho:hover {
-    background-color: #F3D4F4;
-    transform: translateY(-2px);
-}
-
-/* Ajustes em telas menores */
-
-@media (max-width: 768px) {
-
-    .cabecalho {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .cabecalho nav {
-        margin-left: 0;
-        flex: 1 1 100%;
-    }
-
-    .cabecalho nav ul {
-        justify-content: center;
-    }
-
-    .botao-cabecalho {
-        margin-left: 0;
-    }
-}
-
-
-/* =========================================
-   AJUSTES DO RODAPÉ - STUDIO ANA JU
-   ========================================= */
-
-/* Organização principal do rodapé */
 
 .caixa-rodape {
     width: 85%;
     margin: 0 auto;
-
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
-
-    gap: 40px;
+    gap: 50px;
 }
 
-/* ÁREA DA LOGO */
-
 footer .rodape {
+    flex-basis: 25%;
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
-
     padding: 10px;
 }
 
-/* Tamanho da logo */
-
 footer .rodape .logo img {
     display: block;
-
-    width: 190px;
-    height: auto;
-
-    object-fit: contain;
-    border-radius: 10px;
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
 }
-
-/* =========================================
-   LINKS RÁPIDOS
-   ========================================= */
 
 .rodape-links {
     display: flex;
     flex-direction: column;
-
     gap: 15px;
 }
-
-/* Título dos links */
 
 .rodape-links h3,
 .rodape-contato h3 {
@@ -621,14 +385,12 @@ footer .rodape .logo img {
     margin-bottom: 10px;
 }
 
-/* Links um abaixo do outro */
-
 .rodape-links .links {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    gap: 12px;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .rodape-links a,
@@ -638,67 +400,49 @@ footer .rodape .logo img {
     font-size: 14px;
 }
 
-/* Efeito ao passar o mouse */
-
 .rodape-links a:hover,
 .rodape-contato a:hover {
     text-decoration: underline;
 }
 
-/* =========================================
-   CONTATO E REDES SOCIAIS
-   ========================================= */
-
 .rodape-contato {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
     gap: 12px;
+    margin-left: auto;
 }
-
-/* Evita espaçamento extra do <br> no HTML */
 
 .rodape-contato br {
     display: none;
 }
 
-/* =========================================
-   DIREITOS AUTORAIS
-   ========================================= */
-
-.rodape-texo {
-    text-align: center;
-
-    margin-top: 35px;
-    padding: 20px 15px 0;
-
-    border-top: 1px solid rgba(255, 255, 255, 0.4);
-
-    color: white;
-    font-size: 13px;
+.rodape-contato .titulo-cont {
+    text-align: right;
 }
 
-/* =========================================
-   RODAPÉ EM TELAS MENORES
-   ========================================= */
+.redes-sociais {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+}
 
-@media (max-width: 768px) {
+.redes-sociais a {
+    color: white;
+    text-decoration: none;
+}
 
-    .caixa-rodape {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+.redes-sociais a:hover {
+    color: #F3D4F4;
+}
 
-        gap: 30px;
-    }
-
-    .rodape-links .links,
-    .rodape-contato {
-        align-items: center;
-    }
-
-    footer .rodape .logo img {
-        width: 170px;
-    }
+/* Mantém o nome original da classe utilizado no HTML */
+.rodape-texo {
+    text-align: center;
+    margin-top: 35px;
+    padding: 20px 15px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    color: white;
+    font-size: 13px;
 }

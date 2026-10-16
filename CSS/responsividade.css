@@ -1,0 +1,81 @@
+/* STUDIO ANA JU — RESPONSIVIDADE
+   Carregar este arquivo DEPOIS de styles.css no index.html. */
+
+/* TABLETS E NOTEBOOKS MENORES */
+@media (max-width: 1024px) {
+    .cabecalho { padding: 20px 25px; gap: 15px; }
+    .cabecalho nav { margin-left: 10px; }
+    .cabecalho nav ul { gap: 15px; }
+    .cabecalho .logo img { width: 90px; height: 90px; }
+    .botao-cabecalho { padding: 10px 15px; }
+    .inicio-texto { margin-left: 8%; }
+    .sobre-conteudo { padding: 35px 15px; gap: 30px; }
+    .sobre-imagem img { width: 280px; height: 380px; }
+    .caixa-rodape { width: 90%; gap: 25px; }
+    footer .rodape { flex-basis: auto; }
+}
+
+/* CELULARES GRANDES E TABLETS EM PÉ */
+@media (max-width: 768px) {
+    section { padding: 35px 20px; }
+    h2 { font-size: 27px; }
+
+    /* Cabeçalho: logo, menu e botão em linhas organizadas */
+    .cabecalho { flex-direction: column; gap: 18px; padding: 20px 15px; }
+    .cabecalho .logo img { width: 90px; height: 90px; }
+    .cabecalho nav { flex: none; width: 100%; margin-left: 0; }
+    .cabecalho nav ul { justify-content: center; gap: 12px 20px; }
+    .cabecalho nav a { font-size: 14px; }
+    .botao-cabecalho { margin-left: 0; }
+
+    /* Capa: texto mais próximo da borda e título menor */
+    #inicio { min-height: 480px; background-position: center; }
+    .inicio-texto { margin-left: 0; max-width: 100%; }
+    #inicio h2 { font-size: 36px; }
+    #inicio p { font-size: 16px; }
+
+    /* Sobre: imagem em cima, texto embaixo */
+    .sobre-conteudo { flex-direction: column; padding: 25px 0; gap: 25px; }
+    .sobre-imagem img { width: min(100%, 350px); height: 380px; }
+    .sobre-texto { max-width: 100%; }
+    .sobre-texto h3 { font-size: 25px; }
+    .sobre-texto p { font-size: 16px; }
+
+    /* Serviços: cards quebram para a próxima linha */
+    .container-cards { flex-wrap: wrap; }
+    .card { flex: 1 1 calc(50% - 20px); min-width: 220px; }
+
+    /* Galeria: fotos menores sem alterar o JavaScript */
+    .foto { width: 240px; height: 290px; }
+
+    /* Formulário */
+    #contato { padding: 45px 20px; }
+    #contato h2 { font-size: 28px; }
+
+    /* Rodapé: conteúdo empilhado e centralizado */
+    footer { border-top-left-radius: 70px; }
+    .caixa-rodape { flex-direction: column; align-items: center; gap: 25px; }
+    footer .rodape { padding: 0; }
+    .rodape-links, .rodape-contato { align-items: center; text-align: center; }
+    .rodape-links .links { justify-content: center; }
+    .rodape-contato { margin-left: 0; }
+    .rodape-contato .titulo-cont { text-align: center; }
+}
+
+/* CELULARES PEQUENOS */
+@media (max-width: 480px) {
+    section { padding: 30px 15px; }
+    .cabecalho nav ul { gap: 10px 15px; }
+    .cabecalho nav a { font-size: 13px; }
+    #inicio { min-height: 420px; background-position: center; }
+    #inicio h2 { font-size: 30px; }
+    #inicio p { font-size: 15px; }
+    .sobre-imagem img { height: 330px; }
+    .container-cards { flex-direction: column; }
+    .card { flex: 1 1 auto; min-width: 0; width: 100%; }
+    .foto { width: 190px; height: 240px; }
+    #contato { padding: 40px 15px; }
+    footer { border-top-left-radius: 45px; }
+    .rodape-links .links { gap: 12px; }
+    .rodape-texo { margin-top: 25px; }
+}
